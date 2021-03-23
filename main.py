@@ -30,6 +30,8 @@ def echo(update: Update, _: CallbackContext) -> None:
         update.message.reply_text(f'Tchau {update.effective_user.first_name} até logo!')
     if msg == "Tchau":
         update.message.reply_text(f'Tchau {update.effective_user.first_name} até logo!')
+    if msg == "Sara":
+        update.message.reply_text(f'Opa {update.effective_user.first_name}!, Precisa de mim?')
 def menu(update: Update, context: CallbackContext) -> None:
     update.message.reply_text(">> LISTA DE COMANDOS  << \n /hello -> Exibe uma Mensagem para o usuario \n /news -> Mostra a Noticias mais Recentes \n /hacking_comands_android -> Mostra Comandos de Hacking Para Android")
 def hello(update: Update, context: CallbackContext) -> None:
