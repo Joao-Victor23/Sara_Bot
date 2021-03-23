@@ -34,6 +34,10 @@ def echo(update: Update, _: CallbackContext) -> None:
         update.message.reply_text(f'Opa {update.effective_user.first_name}!, Precisa de mim?')
     if msg == "sara":
         update.message.reply_text(f'Opa {update.effective_user.first_name}!, precisa de mim?')
+    if msg == "A sara vai ser minha":
+        update.message.reply_text(f'{update.effective_user.first_name} não seu merda eu não serei sua')
+        update.message.reply_text(f'Puxando Dados do {update.effective_user.first_name}')
+
 def menu(update: Update, context: CallbackContext) -> None:
     update.message.reply_text(">> LISTA DE COMANDOS  << \n /hello -> Exibe uma Mensagem para o usuario \n /news -> Mostra a Noticias mais Recentes \n /hacking_comands_android -> Mostra Comandos de Hacking Para Android")
 def hello(update: Update, context: CallbackContext) -> None:
