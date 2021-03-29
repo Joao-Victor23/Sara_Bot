@@ -24,7 +24,9 @@ for i2 in letras:
         for i4 in letras:
             for i5 in letras:
                 password = i2+i3+i4+i5
+                combinacoes +=1
                 print(password)
                 if password == senha:
                     print("Senha encontrada!")
+                    print("Foram feitas {} combinações".format(combinacoes))
                     exit()
