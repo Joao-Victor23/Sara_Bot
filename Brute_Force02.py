@@ -51,4 +51,5 @@ for i1 in letras:
                 										print('Sua Senha foi encontrada!')
                 										time.sleep(2)
                 										print('Foram geradas um total de {} senhas!'.format(password))
-                	
+                										exit()
+                										
