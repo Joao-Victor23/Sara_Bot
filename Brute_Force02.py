@@ -16,18 +16,18 @@ print("")
 senha = input(">>")
 
 print("[                    ] 0% ")
-time.sleep(2)
+time.sleep(1)
 print("[=====               ] 25%")
-time.sleep(2)
+time.sleep(1)
 print("[==========          ] 50%")
-time.sleep(2)
+time.sleep(1)
 print("[===============     ] 75%")
-time.sleep(2)
+time.sleep(1)
 print("[====================] 100%")
-time.sleep(2)
+time.sleep(1)
 
 
-letras = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+letras = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","1","2","3","5","6","7","8","9"]
 
 combinacoes = 0
 
@@ -35,21 +35,12 @@ for i1 in letras:
     for i2 in letras:
         for i3 in letras:
             for i4 in letras:
-                for i5 in letras:
-                	for i6 in letras:
-                		for i7 in letras:
-                			for i8 in letras:
-                				for i9 in letras:
-                					for i10 in letras:
-                						for i11 in letras:
-                							for i12 in letras:
-                								for i13 in letras:
-                									password = i1+i2+i3+i4+i5+i6+i7+i8+i9+i10+i11+i12+i13
-                									combinacoes += 1
-                									print(password)
-                									if password == senha:
-                										print('Sua Senha foi encontrada!')
-                										time.sleep(2)
-                										print('Foram geradas um total de {} senhas!'.format(password))
-                										exit()
-                										
+            	for i5 in letras:
+            		for i6 in letras:
+            			for i7 in letras:
+            				for i8 in letras:
+            					password = i1+i2+i3+i4+i5+i6+i7+i8
+            					print(password)
+            					if password == senha:
+            						print("sua senha foi encontrada!")
+            						exit()
